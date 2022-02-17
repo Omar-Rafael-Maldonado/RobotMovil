@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.xst" -ofn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim compl.ngc compl_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.xst" -ofn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.syr" 

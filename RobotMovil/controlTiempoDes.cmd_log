@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.xst" -ofn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.syr" 
+xst -intstyle ise -ifn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.xst" -ofn "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.syr" 

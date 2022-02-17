@@ -1,0 +1,34 @@
+V3 14
+FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd" 2022/02/16.00:24:07 P.20131013
+EN work/compl 1644989055 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/compl/Behavioral 1644989056 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd" \
+      EN work/compl 1644989055
+FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.vhd" 2022/02/15.22:32:32 P.20131013
+EN work/controlTiempoDes 1644982381 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/std_logic_arith 1381692177
+AR work/controlTiempoDes/Behavioral 1644982382 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/controlTiempoDes.vhd" \
+      EN work/controlTiempoDes 1644982381 CP antirrebote
+FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/motor.vhd" 2022/02/15.23:45:41 P.20131013
+EN work/motor 1644998231 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/motor.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/motor/control 1644998232 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/motor.vhd" \
+      EN work/motor 1644998231
+FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/RoborMovil.vhd" 2022/02/15.20:16:36 P.20131013
+FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT.vhd" 2022/02/16.02:06:00 P.20131013
+EN work/ROBOT 1644995234 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ROBOT/BEHAVIORAL 1644995235 \
+      FL "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT.vhd" \
+      EN work/ROBOT 1644995234

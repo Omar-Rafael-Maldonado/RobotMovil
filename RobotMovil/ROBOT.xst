@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/xst"
+elaborate
+-ifn ROBOT.prj
+-ifmt mixed

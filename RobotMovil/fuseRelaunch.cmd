@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT_isim_beh.exe" -prj "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT_beh.prj" "work.ROBOT" 

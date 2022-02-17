@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/motor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="motor" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/motor/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motor/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motor/adelante" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adelante</obj_property>
+      <obj_property name="ObjectShortName">adelante</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motor/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motor/m" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motor/men" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">men[1:0]</obj_property>
+      <obj_property name="ObjectShortName">men[1:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,9 @@
+[Inputs]
+clk
+reset
+adelante
+=ftiempo[3:0]=
+[Outputs]
+=m[1:0]=
+[BiDir]
+=q[3:0]=

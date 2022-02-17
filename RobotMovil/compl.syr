@@ -1,0 +1,473 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: compl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "compl.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "compl"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : compl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd" in Library work.
+Entity <compl> compiled.
+Entity <compl> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <compl> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <compl> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd" line 22: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <q_reg>, <q_reg1>, <q_reg2>
+Entity <compl> analyzed. Unit <compl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <compl>.
+    Related source file is "C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/compl.vhd".
+WARNING:Xst:737 - Found 2-bit latch for signal <sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 28-bit latch for signal <q_next>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 28-bit latch for signal <q_next1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 28-bit latch for signal <q_next2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 28-bit adder for signal <q_next$addsub0000> created at line 40.
+    Found 28-bit adder for signal <q_next1$addsub0000> created at line 80.
+    Found 28-bit adder for signal <q_next2$addsub0000> created at line 135.
+    Found 28-bit register for signal <q_reg>.
+    Found 28-bit register for signal <q_reg1>.
+    Found 28-bit register for signal <q_reg2>.
+    Summary:
+	inferred  84 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <compl> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 28-bit adder                                          : 3
+# Registers                                            : 3
+ 28-bit register                                       : 3
+# Latches                                              : 5
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 28-bit latch                                          : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 28-bit adder                                          : 3
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Latches                                              : 5
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 28-bit latch                                          : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <compl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block compl, actual ratio is 3.
+Latch sel_0 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : compl.ngr
+Top Level Output File Name         : compl
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 420
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 81
+#      LUT2_D                      : 1
+#      LUT3                        : 89
+#      LUT4                        : 23
+#      LUT4_L                      : 55
+#      MUXCY                       : 81
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 173
+#      FDE                         : 84
+#      LDE                         : 1
+#      LDE_1                       : 88
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 7
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      165  out of   4656     3%  
+ Number of Slice Flip Flops:            173  out of   9312     1%  
+ Number of 4 input LUTs:                253  out of   9312     2%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 84    |
+ss                                 | IBUF+BUFG              | 1     |
+reset                              | IBUF+BUFG              | 88    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.263ns (Maximum Frequency: 234.559MHz)
+   Minimum input arrival time before clock: 5.196ns
+   Maximum output required time after clock: 6.948ns
+   Maximum combinational path delay: 9.412ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ss'
+  Clock period: 2.310ns (frequency: 432.900MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.310ns (Levels of Logic = 1)
+  Source:            a (LATCH)
+  Destination:       a (LATCH)
+  Source Clock:      ss falling
+  Destination Clock: ss falling
+
+  Data Path: a to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.676   0.622  a (a)
+     LUT4:I0->O            1   0.704   0.000  a_mux0005 (a_mux0005)
+     LDE:D                     0.308          a
+    ----------------------------------------
+    Total                      2.310ns (1.688ns logic, 0.622ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reset'
+  Clock period: 4.263ns (frequency: 234.559MHz)
+  Total number of paths / destination ports: 208 / 88
+-------------------------------------------------------------------------
+Delay:               4.263ns (Levels of Logic = 2)
+  Source:            sel_1 (LATCH)
+  Destination:       sel_1 (LATCH)
+  Source Clock:      reset rising
+  Destination Clock: reset rising
+
+  Data Path: sel_1 to sel_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q           64   0.676   1.276  sel_1 (sel_1)
+     LUT4:I3->O            1   0.704   0.595  sel_mux0006<27>0 (sel_mux0006<27>0)
+     LUT4:I0->O            1   0.704   0.000  sel_mux0006<27>41 (sel_mux0006<27>)
+     LDE_1:D                   0.308          sel_1
+    ----------------------------------------
+    Total                      4.263ns (2.392ns logic, 1.871ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 252 / 84
+-------------------------------------------------------------------------
+Offset:              5.196ns (Levels of Logic = 2)
+  Source:            ss (PAD)
+  Destination:       q_reg1_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ss to q_reg1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            98   1.218   1.458  ss_IBUF (ss_IBUF1)
+     LUT3:I0->O           28   0.704   1.261  q_reg_and00001 (q_reg_and0000)
+     FDE:CE                    0.555          q_reg_0
+    ----------------------------------------
+    Total                      5.196ns (2.477ns logic, 2.719ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ss'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              4.798ns (Levels of Logic = 3)
+  Source:            s_fci (PAD)
+  Destination:       a (LATCH)
+  Destination Clock: ss falling
+
+  Data Path: s_fci to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.218   1.440  s_fci_IBUF (s_fci_IBUF)
+     LUT4:I0->O            1   0.704   0.424  a_mux0005_SW2 (N288)
+     LUT4:I3->O            1   0.704   0.000  a_mux0005 (a_mux0005)
+     LDE:D                     0.308          a
+    ----------------------------------------
+    Total                      4.798ns (2.934ns logic, 1.864ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset'
+  Total number of paths / destination ports: 204 / 176
+-------------------------------------------------------------------------
+Offset:              4.969ns (Levels of Logic = 3)
+  Source:            s_fci (PAD)
+  Destination:       sel_1 (LATCH)
+  Destination Clock: reset rising
+
+  Data Path: s_fci to sel_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.218   1.440  s_fci_IBUF (s_fci_IBUF)
+     LUT4:I0->O            1   0.704   0.595  sel_mux0006<27>0 (sel_mux0006<27>0)
+     LUT4:I0->O            1   0.704   0.000  sel_mux0006<27>41 (sel_mux0006<27>)
+     LDE_1:D                   0.308          sel_1
+    ----------------------------------------
+    Total                      4.969ns (2.934ns logic, 2.035ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              6.948ns (Levels of Logic = 3)
+  Source:            sel_0 (LATCH)
+  Destination:       e1 (PAD)
+  Source Clock:      reset rising
+
+  Data Path: sel_0 to e1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            6   0.676   0.748  sel_0 (sel_0)
+     LUT4:I1->O            1   0.704   0.424  e134_SW0 (N291)
+     LUT4:I3->O            1   0.704   0.420  e134 (e1_OBUF)
+     OBUF:I->O                 3.272          e1_OBUF (e1)
+    ----------------------------------------
+    Total                      6.948ns (5.356ns logic, 1.592ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 34 / 4
+-------------------------------------------------------------------------
+Delay:               9.412ns (Levels of Logic = 5)
+  Source:            s_fci (PAD)
+  Destination:       e2 (PAD)
+
+  Data Path: s_fci to e2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.218   1.440  s_fci_IBUF (s_fci_IBUF)
+     LUT3:I0->O            2   0.704   0.526  sel_mux0006<26>210 (N2)
+     LUT4:I1->O            1   0.704   0.424  e4_SW1 (N23)
+     LUT4:I3->O            1   0.704   0.420  e4 (e4_OBUF)
+     OBUF:I->O                 3.272          e4_OBUF (e4)
+    ----------------------------------------
+    Total                      9.412ns (6.602ns logic, 2.810ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.98 secs
+ 
+--> 
+
+Total memory usage is 4513380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

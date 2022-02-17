@@ -1,0 +1,32 @@
+ISim log file
+Running: C:\Users\omara\OneDrive\Escritorio\Proyecto FInal\RobotMovil\ROBOT_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/omara/OneDrive/Escritorio/Proyecto FInal/RobotMovil/ROBOT_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /robot/sel 00 -radix bin
+# isim force add /robot/sel 00 -radix bin
+# restart
+# isim force add /robot/s_linea 00 -radix bin -value 10 -radix bin -time 500 ns -repeat 1 us
+# isim force add /robot/s_linea 00 -radix bin -value 10 -radix bin -time 500 ns -repeat 1 us
+# isim force add /robot/s_luz 01 -radix bin -value 11 -radix bin -time 250 ns -repeat 500 ns
+# isim force add /robot/s_luz 01 -radix bin -value 11 -radix bin -time 250 ns -repeat 500 ns
+# isim force add /robot/s_obst 11 -radix bin -value 00 -radix bin -time 750 ns -repeat 1500 ns
+# isim force add /robot/s_obst 11 -radix bin -value 00 -radix bin -time 750 ns -repeat 1500 ns
+# run 6.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /robot/sel 01 -radix bin
+# run 6.00us
+# isim force add /robot/sel 10 -radix bin
+# isim force add /robot/sel 10 -radix bin
+# isim force add /robot/sel 10 -radix bin
+# run 6.00us
